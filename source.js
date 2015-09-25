@@ -7,5 +7,8 @@ $.ajax({
   dataType: "jsonp",
   success: function(data) {
     console.log(data);
+  },
+  error: function(jqxHR, status, errorThrown) {
+    console.log(jqxHR);
   }
 });
