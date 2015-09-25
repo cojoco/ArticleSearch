@@ -5,7 +5,10 @@ $.ajax({
   url: myurl,
   crossDomain: true,
   dataType: "jsonp",
+  jsonp: 'callback',
+  jsonpCallback: "svc_search_v2_articlesearch",
   success: function(data) {
     console.log(data);
   }
+
 });
