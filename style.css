@@ -4,7 +4,7 @@
 }
 
 #article-holder .row:nth-child(2n) {
-  background-color: #000;
+  background-color: #ece9e6;
 }
 
 #article-holder .row:nth-child(2n+1) {

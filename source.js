@@ -1,5 +1,5 @@
-
 $(function() {
+  $(".row").hide();
   $("#button").click(function(e) {
 
     e.preventDefault();
@@ -24,5 +24,6 @@ $(function() {
         console.log(jqxHR);
       }
     });
+    $(".row").show();
   });
 });
