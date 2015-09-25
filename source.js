@@ -9,9 +9,16 @@ $.ajax({
   jsonp: 'callback',
   jsonpCallback: "svc_search_v2_articlesearch",
   success: function(data) {
-    console.log(data);
   },
   error: function(jqxHR, status, errorThrown) {
     console.log(jqxHR);
   }
+    for (var i = 0; i < 10; i++) {
+      var curArticle = "#article" + (i+1);
+      var curSnippet = data.response.docs[i].snippet;
+      var curUrl = data.response.docs[i].web_url;
+      $(curArticle).html(curUrl + "<br>" + curSnippet);
+    }
+  }
+
 });
